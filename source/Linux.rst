@@ -1,0 +1,122 @@
+Linux
+======
+
+==============================================================
+Как заменить пробелы на нижнее подчеркивание в именах файлов?
+==============================================================
+
+::
+
+    ls | perl -ane 's/\n|\r//g;next unless m/\s+/; $sf=$_; $sf=~s/(\s)/\\$1/g; $df=$_; $df=~s/\s+/_/g; print "mv $sf $df\n"' | sh
+
+
+===========================
+Настройка второго монитора
+===========================
+
+There are several ways to make xrandr customizations permanent from session to session:
+a) .xprofile, b) kdm/gdm, c) xorg.conf. Each of these mechanisms will be discussed in turn.
+
+Setting xrandr commands in .xprofile
+
+A user's ~/.xprofile file is executed on Xorg startup if it exists and is executable.
+You can copy and paste xrandr command line strings into this file so they're executed when you log in.
+For example:
+
+  ``$ xrandr --output VGA-0 --mode 800x600``
+
+There are two disadvantages to using .xprofile for xrandr settings.
+First, it occurs fairly late in the startup process, so you'll see some resolution resizing during
+the initial screen draw; in some cases panel windows may resize improperly as a result.
+Second, as this is a per-user setting, it won't affect the resolutions of other users,
+nor will it alter the resolution on the login screen.
+
+
+xrandr --output $choice --primary
+
+::
+
+    username@username:~$ xrandr
+    Screen 0: minimum 320 x 200, current 3200 x 1080, maximum 8192 x 8192
+    VGA1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 476mm x 268mm
+       1920x1080      60.0*+
+       1600x1200      60.0  
+       1680x1050      60.0  
+       1400x1050      60.0  
+       1280x1024      75.0     60.0  
+       1440x900       59.9  
+       1280x960       60.0  
+       1152x864       75.0  
+       1024x768       75.1     70.1     60.0  
+       832x624        74.6  
+       800x600        72.2     75.0     60.3     56.2  
+       640x480        72.8     75.0     66.7     60.0  
+       720x400        70.1  
+    HDMI1 connected 1280x1024+1920+56 (normal left inverted right x axis y axis) 338mm x 270mm
+       1280x1024      60.0 +   75.0* 
+       1024x768       75.1     60.0  
+       800x600        75.0     60.3  
+       640x480        75.0     60.0  
+       720x400        70.1  
+    DP1 disconnected (normal left inverted right x axis y axis)
+    username@username:~$ xrandr --output VGA1 --primary
+
+
+===========================
+Настройка сети
+===========================
+
+::
+
+    ethtool eth0            # Показать Ethernet статус
+    route -n                # Вывести весь список маршрутов
+
+
+===========================
+Конвертировать рекурсивно файлы формата png в формат svg
+===========================
+
+Конвертировать рекурсивно файлы формата png в формат svg и скопировать их в папку icons
+
+::
+
+    for filename in $(find . -name '*.svg'); do inkscape  -z -e  ${filename}.png -h 400  $filename;  done
+    cp `find . -name "*.svg.png"` icons
+
+
+===========================
+dump database postgres
+===========================
+
+::
+
+    $ sudo su - postgres
+    $ pg_dump -O -U postgres database_name | gzip > /tmp/dump.sql.gz
+    $ psql -U postgres -f /tmp/dump.sql.gz
+
+
+
+::
+
+    $ sudo su -
+    # ethtool eth0
+    Settings for eth0:
+      Supported ports: [ MII ]
+      Supported link modes:   10baseT/Half 10baseT/Full 
+                              100baseT/Half 100baseT/Full 
+      Supported pause frame use: No
+      Supports auto-negotiation: Yes
+      Advertised link modes:  10baseT/Half 10baseT/Full 
+                              100baseT/Half 100baseT/Full 
+      Advertised pause frame use: No
+      Advertised auto-negotiation: Yes
+      Speed: 100Mb/s
+      Duplex: Full
+      Port: MII
+      PHYAD: 1
+      Transceiver: external
+      Auto-negotiation: on
+      Supports Wake-on: g
+      Wake-on: g
+      Link detected: yes
+

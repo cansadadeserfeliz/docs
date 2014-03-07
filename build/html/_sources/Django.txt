@@ -1,0 +1,78 @@
+Django
+======
+
+
+=======================================================
+Как добавить пустой выбор в СhoiceField для ModelForm?
+=======================================================
+
+::
+
+	from django.db import models
+
+	class Project(models.Model):
+	    name = models.CharField(max_length=140)
+	    parent = models.ForeignKey('self', blank=True, null=True)
+
+	class ProjectForm(ModelForm):
+	    def __init__(self, *args, **kwargs):
+	        super(ProjectForm, self).__init__(*args, **kwargs)
+	        ordered = []
+	        // ... making ordered list ...
+	        self.fields['parent'].choices = ordered
+        self.fields['parent'].choices.insert(0, ('', u'------'))
+
+
+
+=============================================
+Deserialize request
+=============================================
+
+::
+
+	data = self.deserialize(
+	            request,
+	            request.raw_post_data,
+	            format=request.META.get('CONTENT_TYPE', 'application/json'))
+
+
+===================================================
+Как объединить querysets от одной и той же модели?
+===================================================
+
+::
+
+	from itertools import chain
+	result_list = list(chain(page_list, article_list, post_list))
+
+
+=============================================
+Автозаполнение даты в модели
+=============================================
+
+::
+
+	import datetime
+	from django.db import models
+
+	class News(models.Model):
+	    pub_date = models.DateTimeField(u'Дата публикации', blank=False, default=datetime.datetime.now)
+
+
+=============================================
+Ошибка с native DateTimeField
+=============================================
+
+Ошибка: ::
+
+	remote: /usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:808: 
+		RuntimeWarning: DateTimeField received a naive datetime (2012-08-14 10:18:39.892967) 
+		while time zone support is active.
+	remote:   RuntimeWarning)
+
+Возникает при заполнении базы по команде ``python manage.py migrate``.
+
+Решение: ::
+
+	from django.utils.timezone  import utc
+	datetime=datetime.datetime.utcnow().replace(tzinfo = utc)

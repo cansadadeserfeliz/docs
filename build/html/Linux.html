@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Linux &mdash; Docs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Docs 1.0 documentation" href="index.html" />
+    <link rel="next" title="ExtJs" href="ExtJs.html" />
+    <link rel="prev" title="Git" href="Git.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ExtJs.html" title="ExtJs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Git.html" title="Git"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Docs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="linux">
+<h1>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Как заменить пробелы на нижнее подчеркивание в именах файлов?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>ls | perl -ane 's/\n|\r//g;next unless m/\s+/; $sf=$_; $sf=~s/(\s)/\\$1/g; $df=$_; $df=~s/\s+/_/g; print "mv $sf $df\n"' | sh</pre>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Настройка второго монитора<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>There are several ways to make xrandr customizations permanent from session to session:
+a) .xprofile, b) kdm/gdm, c) xorg.conf. Each of these mechanisms will be discussed in turn.</p>
+<p>Setting xrandr commands in .xprofile</p>
+<p>A user&#8217;s ~/.xprofile file is executed on Xorg startup if it exists and is executable.
+You can copy and paste xrandr command line strings into this file so they&#8217;re executed when you log in.
+For example:</p>
+<blockquote>
+<div><tt class="docutils literal"><span class="pre">$</span> <span class="pre">xrandr</span> <span class="pre">--output</span> <span class="pre">VGA-0</span> <span class="pre">--mode</span> <span class="pre">800x600</span></tt></div></blockquote>
+<p>There are two disadvantages to using .xprofile for xrandr settings.
+First, it occurs fairly late in the startup process, so you&#8217;ll see some resolution resizing during
+the initial screen draw; in some cases panel windows may resize improperly as a result.
+Second, as this is a per-user setting, it won&#8217;t affect the resolutions of other users,
+nor will it alter the resolution on the login screen.</p>
+<p>xrandr &#8211;output $choice &#8211;primary</p>
+<div class="highlight-python"><pre>username@username:~$ xrandr
+Screen 0: minimum 320 x 200, current 3200 x 1080, maximum 8192 x 8192
+VGA1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 476mm x 268mm
+   1920x1080      60.0*+
+   1600x1200      60.0
+   1680x1050      60.0
+   1400x1050      60.0
+   1280x1024      75.0     60.0
+   1440x900       59.9
+   1280x960       60.0
+   1152x864       75.0
+   1024x768       75.1     70.1     60.0
+   832x624        74.6
+   800x600        72.2     75.0     60.3     56.2
+   640x480        72.8     75.0     66.7     60.0
+   720x400        70.1
+HDMI1 connected 1280x1024+1920+56 (normal left inverted right x axis y axis) 338mm x 270mm
+   1280x1024      60.0 +   75.0*
+   1024x768       75.1     60.0
+   800x600        75.0     60.3
+   640x480        75.0     60.0
+   720x400        70.1
+DP1 disconnected (normal left inverted right x axis y axis)
+username@username:~$ xrandr --output VGA1 --primary</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Linux</a><ul>
+<li><a class="reference internal" href="#id1">Как заменить пробелы на нижнее подчеркивание в именах файлов?</a></li>
+<li><a class="reference internal" href="#id2">Настройка второго монитора</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Git.html"
+                        title="previous chapter">Git</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ExtJs.html"
+                        title="next chapter">ExtJs</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/Linux.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ExtJs.html" title="ExtJs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Git.html" title="Git"
+             >previous</a> |</li>
+        <li><a href="index.html">Docs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, vero4ka.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

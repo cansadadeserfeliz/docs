@@ -1,0 +1,87 @@
+Mathematics in python
+=====================
+
+=============================================
+Интерполяционный многочлен Лагранжа
+=============================================
+
+http://en.wikipedia.org/wiki/Lagrange_polynomial
+
+::
+
+    def Fi(i, xi, x):
+        res = 1
+        for j in range(0, n):
+            if j != i:
+                res *= xi - x[j]
+                res /= x[i] - x[j]
+        return res
+
+    def Ln(xi, n, x, y):
+        res = 0
+        for i in range(0, n):
+            res += y[i] * Fi(i, xi, x)
+        return res
+
+    n = 3
+    x = [-1.0, 0.0, 1.0]
+    y = [10.0, 5.0, 20.0]
+
+    xs, ys = [], []
+    s = x[0]
+    while s <= x[n-1]:
+        xs.append(s)
+        s += 0.05
+    for xi in xs:
+        ys.append(Ln(xi, n, x, y))
+
+    pylab.plot(xs, ys, 'b.')
+    pylab.plot(x,y,'r.')
+    pylab.show()
+
+.. image:: images/img_010.png
+
+===================================================
+Решение системы линейных уравнений (NumPy & SciPy)
+===================================================
+
+.. image:: images/img_011.png
+.. image:: images/img_012.png
+
+::
+
+    >>> import numpy
+
+    >>> A = [[1, 3, 5], [2, 5, 1], [2, 3, 8]]
+    >>> b = [10, 8, 3]
+    >>> A = numpy.array(A)
+    >>> A
+    array([[1, 3, 5],
+           [2, 5, 1],
+           [2, 3, 8]])
+    >>> b = numpy.array(b)
+    >>> b
+    array([10,  8,  3])
+    >>> numpy.linalg.solve(A, b)
+    array([-9.28,  5.16,  0.76])
+    >>> x = list(numpy.linalg.solve(A, b))
+    >>> x
+    [-9.2800000000000011, 5.1600000000000001, 0.76000000000000001]
+
+
+===================================================
+Кластеризация
+===================================================
+
+::
+
+    >>> from numpy import array
+    >>> from scipy.cluster.vq import whiten
+    >>> features  = array([[  1.9,2.3,1.7],
+    ...                    [  1.5,2.5,2.2],
+    ...                    [  0.8,0.6,1.7,]])
+    >>> whiten(features)
+    array([[ 3.41250074,  2.20300046,  5.88897275],
+           [ 2.69407953,  2.39456571,  7.62102355],
+           [ 1.43684242,  0.57469577,  5.88897275]])
+

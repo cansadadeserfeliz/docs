@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Git &mdash; Docs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Docs 1.0 documentation" href="index.html" />
+    <link rel="next" title="Linux" href="Linux.html" />
+    <link rel="prev" title="Python Excel" href="excel.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Linux.html" title="Linux"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="excel.html" title="Python Excel"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Docs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="git">
+<h1>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python"><pre>apt-get install git-core</pre>
+</div>
+<div class="section" id="id1">
+<h2>Начальная конфигурация<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>$ git config --global user.name "John"
+$ git config --global user.email john@example.com
+$ git config --global color.ui true</pre>
+</div>
+<p><tt class="docutils literal"><span class="pre">.gitconfig</span></tt></p>
+</div>
+<div class="section" id="id2">
+<h2>Основные команды<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>$ git init             # создать новый репозиторий
+$ git status           # что изменилось с последнего коммита
+$ git add README.txt   # добавить файл
+$ git commit -m "Create README.txt" # зафиксировать изменения
+
+$ git add --all         # добавить все новые файлы
+$ git add &lt;list of files&gt;
+$ git add *.txt         # для текущей директории
+$ git add "*.txt"       # для всего проекта
+$ git add docs/*.txt
+$ git add docs/
+$ git add .             # добавить все изменения текущего каталога
+
+$ git log
+$ git log --pretty=oneline # покажи красиво в одну строчку
+
+$ git reset             # отменить изменения
+$ git reset HEAD hello.html
+
+$ git revert HEAD       # отменить коммит
+
+$ git config --global alias.st status
+$ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+$ git hist
+
+$ git checkout &lt;hash&gt;
+$ git checkout master   # к последней версии в ветке master
+
+$ git tag v1            # добавить тэг
+$ git checkout v1       # обновиться до тэга
+$ git tag               # посмотреть все тэги
+$ git tag -d oops
+
+$ git mv hello.html lib</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Git</a><ul>
+<li><a class="reference internal" href="#id1">Начальная конфигурация</a></li>
+<li><a class="reference internal" href="#id2">Основные команды</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="excel.html"
+                        title="previous chapter">Python Excel</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Linux.html"
+                        title="next chapter">Linux</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/Git.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Linux.html" title="Linux"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="excel.html" title="Python Excel"
+             >previous</a> |</li>
+        <li><a href="index.html">Docs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, vero4ka.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
