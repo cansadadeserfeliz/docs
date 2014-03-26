@@ -85,15 +85,26 @@ xrandr --output $choice --primary
 
 
 ===========================
-dump database postgres
+postgres
 ===========================
 
 ::
 
-    $ sudo su - postgres
-    $ pg_dump -O -U postgres database_name | gzip > /tmp/dump.sql.gz
-    $ psql -U postgres -f /tmp/dump.sql.gz
+    $ # delete existing database
+    $ dropdb database_name
 
+    $ # create a new database
+    $ createdb database_name -O ownername
+
+    $ # load database from dump
+    $ psql -U database_name -f ~/Documents/database_name.psql
+
+    $ # set a password for all users as demo
+    $ psql -d database_name 
+    $ database_name=# UPDATE userprofile_user set password ='bcrypt$$2a$12$udndek2c62VlLqWnAYU5qePYQ7SS9rmfnxIuGNhGR4EMfFadQsMuG';
+
+    $ # make a dump of database
+    $ pg_dump -O -U ownername database_name | gzip > /tmp/dump.sql.gz
 
 
 ::
