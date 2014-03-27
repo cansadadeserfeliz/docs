@@ -65,3 +65,21 @@ Git
     # delete unused local branches
     $ for branch in $( git branch |grep  AFT | grep -v origin ); do  git branch -d $branch; done
 
+
+Configuration file ``~/.gitconfig``:
+
+::
+
+    [user]
+        name = Vera
+        email = vera@example.com
+    [color]
+        ui = true
+    [alias]
+        st = status
+        ci = commit
+        last = log -1 HEAD
+        co = checkout
+    [init]
+        templatedir = ~/.git_template
+
