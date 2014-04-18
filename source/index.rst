@@ -21,7 +21,6 @@ Contents:
    Linux
    DB
    Javascript
-   ExtJs
 
 
 Indices and tables
