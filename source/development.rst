@@ -2,15 +2,42 @@ Development
 ===========
 
 ==========
-Angular JS
+Angular.JS
 ==========
 
 Create an application:
 
 ::
 
-    var app = angular.module('store', []);
+    (function(){
+      var app = angular.module('store', []);
+    })();
+    
+**Controllers** help us to get data on to the page. Controllers are where we
+define our app's behavior by defining functions and values.
 
+::
+
+    var app = angular.module('store', []);
+    
+    var gem = {
+      'name': 'Blablabla',
+      'price': 2.95,
+      'description': '...',
+      'canPurchase': false
+    }
+    app.controller('StoreController', function(){
+      this.product = gem;  // product is a property of our controller
+    })
+
+::
+
+    <div ng-controller="StoreController as store">
+      <h1>{{ store.product.name }}</h1>
+      <h2>{{ store.product.price }}</h2>
+      <p>{{ store.product.description }}</p>
+      <button ng-show="store.product.canPurchase">Add to cart</button>
+    </div>
 
 =======================
 Basic MySQL commands
@@ -144,40 +171,6 @@ Basic MySQL commands
 Django
 ======
 
-=======================================================
-Как добавить пустой выбор в СhoiceField для ModelForm?
-=======================================================
-
-::
-
-	from django.db import models
-
-	class Project(models.Model):
-	    name = models.CharField(max_length=140)
-	    parent = models.ForeignKey('self', blank=True, null=True)
-
-	class ProjectForm(ModelForm):
-	    def __init__(self, *args, **kwargs):
-	        super(ProjectForm, self).__init__(*args, **kwargs)
-	        ordered = []
-	        // ... making ordered list ...
-	        self.fields['parent'].choices = ordered
-        self.fields['parent'].choices.insert(0, ('', u'------'))
-
-
-=======================================================
-Filter values list
-=======================================================
-
-
-::
-
-
-	In [7]: Airport.objects.all().values_list('iata_code', 'city__name', 'city__country__name').filter(iata_code='DME')
-	Out[7]: [(u'DME', u'Moscow', u'Russia')]
-
-
-
 =============================================
 How to set a label for a field that is a method
 =============================================
@@ -194,14 +187,8 @@ How to set a label for a field that is a method
 
 
 =============================================
-Расширение shell_plus
+iPython
 =============================================
-
-Откуда берется: https://github.com/django-extensions/django-extensions
-
-Как запустить: ``python manage.py shell_plus``
-
-Чтобы shell_plus перезапускался каждый раз когда что-то меняется в коде на django:
 
 ::
 
