@@ -13,31 +13,41 @@ Create an application:
       var app = angular.module('store', []);
     })();
     
-**Controllers** help us to get data on to the page. Controllers are where we
+**Directives** - HTML annotations that trigger Javascript behaviors.
+
+``ng-app`` - attach the Application Module to the page
+
+::
+
+  <html ng-app="store">
+
+``ng-controller`` - attach a Controller function to the pages
+
+::
+
+  <body ng-controller="StoreController as store">
+
+``ng-show`` / ``ng-hide`` - display a section based on an Expression
+
+::
+
+  <h1 ng-show="name"> Hello, {{ name }}! <h1>
+
+``ng-repeat`` - repeat a section for each item in an Array
+
+::
+
+  <li ng-repeat="product in store.products"> {{ product.name }} </li>
+
+**Modules** - Where our application components live.
+
+**Controllers** - Where we add application behavior. 
+Controllers help us to get data on to the page. Controllers are where we
 define our app's behavior by defining functions and values.
 
-::
+** Expressions ** - How values get displayed within the page.
 
-    var app = angular.module('store', []);
-    
-    var gem = {
-      'name': 'Blablabla',
-      'price': 2.95,
-      'description': '...',
-      'canPurchase': false
-    }
-    app.controller('StoreController', function(){
-      this.product = gem;  // product is a property of our controller
-    })
-
-::
-
-    <div ng-controller="StoreController as store">
-      <h1>{{ store.product.name }}</h1>
-      <h2>{{ store.product.price }}</h2>
-      <p>{{ store.product.description }}</p>
-      <button ng-show="store.product.canPurchase">Add to cart</button>
-    </div>
+Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOvab
 
 =======================
 Basic MySQL commands
