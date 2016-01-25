@@ -45,9 +45,51 @@ Create an application:
 Controllers help us to get data on to the page. Controllers are where we
 define our app's behavior by defining functions and values.
 
-** Expressions ** - How values get displayed within the page.
+**Expressions** - How values get displayed within the page.
+
+Formatting with filters.
+
+::
+
+  {{ data | filter:options }}
+  {{ '1388123412323' | date:'MM/dd/yyyy @ h:mma' }} --> 12/27/2013 @ 12:50AM
+  {{ 'octagon gem' | uppercase }} --> OCTAGON GEM
+  {{ 'My Description' | limitTo:8 }} --> My Descr
+  {{ data | orderBy:'-price' }}  --> sorts from most expensive to least expensive
+  
+Images.
+
+::
+
+  <img src="{{ product.images[0].full }}" />  --> ERROR
+  
+The browser tries to load images *before* the Expression evaluates.
+
+::
+
+  <img ng-src="{{ product.images[0].full }}" />  --> ERROR
 
 Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOvab
+
+Add validation to form:
+
+1. Turn off HTML validations (of browsers)
+
+::
+
+  <form name="reviewForm" novalidate>
+  
+2. Mark required fields
+
+::
+
+  <input nama="author" required>
+  
+3. Check if validation works:
+
+::
+
+  <div>review form is {{reviewForm.$valid}}</div>
 
 =======================
 Basic MySQL commands
