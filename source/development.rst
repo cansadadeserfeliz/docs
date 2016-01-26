@@ -71,7 +71,7 @@ The browser tries to load images *before* the Expression evaluates.
 
 Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOvab
 
-Add validation to form:
+**Add validation to form**:
 
 1. Turn off HTML validations (of browsers)
 
@@ -85,11 +85,83 @@ Add validation to form:
 
   <input nama="author" required>
   
-3. Check if validation works:
+3. Check if validation works (via form name):
 
 ::
 
   <div>review form is {{reviewForm.$valid}}</div>
+
+4. Prevent the form from getting submitted:
+
+::
+
+  <form name="reviewForm" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
+  
+5. Show the user why the form isn't valid.
+
+Angular adds some classes:
+
+::
+
+  <input name="author" type="email" class="ng-pristine ng-invalid" />
+  
+``ng-pristine`` - the field hasn't been touched.
+
+``ng-invalid`` - the field is not valid.
+
+And on change the class gets updated:
+ 
+::
+
+  <input name="author" type="email" class="ng-dirty ng-invalid" />
+  
+``ng-dirty`` - the field was changed.
+
+When we have a valid email it becomes:
+
+::
+
+  <input name="author" type="email" class="ng-dirty ng-valid" />
+
+So we can use it in our CSS:
+
+::
+
+  .ng-invalid.ng-dirty {
+    border-color: #FA787E;  // red
+  }
+
+  .ng-valid.ng-dirty {
+    border-color: #78FA89; // green
+  }
+  
+Angular has build-in email, url, numbers (min/max) validation.
+
+=======
+Ruby
+=======
+
+``to_s`` converts values to **s**trings
+
+``to_i`` converts values to **i**ntegers
+
+``to_a`` converts values to **a**rrays
+
+**Exclamation Points.** Methods may have exclamation points in their name, 
+which just means to impact the current data, rather than making a copy.
+
+``ticket.sort!`` The exclamation signals that we intend for Ruby to directly 
+modify the same array that we've built, rather than make a brand new copy 
+that is sorted.
+
+**Square Brackets.** With these, you can target and find things. 
+You can even replace them if necessary.
+
+**Chaining methods** lets you get a lot more done in a single command. 
+Break up a poem, reverse it, reassemble it: ``poem.lines.to_a.reverse.join``.
+
+Complete list of string methods: http://ruby-doc.org/core-2.3.0/String.html
+
 
 =======================
 Basic MySQL commands
