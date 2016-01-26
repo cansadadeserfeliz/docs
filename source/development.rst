@@ -203,7 +203,7 @@ Angular has build-in email, url, numbers (min/max) validation.
   (function(){
     var app = angular.module('store', ['store-products']);
     
-    app.controller('storeController'), function { ... });
+    app.controller('storeController'), function() { ... });
   })();
 
   // products.js
@@ -211,9 +211,37 @@ Angular has build-in email, url, numbers (min/max) validation.
   (function(){
     var app = angular.module('store-products', []);
     
-    app.directive('productTitle'), function { ... });
-    app.directive('productPanels'), function { ... });
+    app.directive('productTitle'), function() { ... });
+    app.directive('productPanels'), function() { ... });
   })();
+  
+**Services**
+
+Allow to get data from API.
+
+``$http`` - fetching JSON tada from a web service
+
+``$log`` - logging messages to the JavaScript console
+
+``$log`` - filter in array
+
+::
+
+  // app.js
+
+  (function(){
+    var app = angular.module('store', ['store-products']);
+    
+    app.controller('storeController'), [ '$http', function ($http) {
+      var store = this;
+      store.products = [];  // so when the page loads there will be no errors
+      
+      $http.get('/products.json', {apiKey: 'myApiKey'}).success(function(data){
+        store.products = data;
+      });
+    } ]);
+  })();
+
 
 =======
 Ruby
