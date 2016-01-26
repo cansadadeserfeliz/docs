@@ -13,8 +13,8 @@ Fat contains about 9 calories per gram, while carbohydrates and proteins
 contain about 4 calories per gram each. All three of these macronutrients 
 can be stored by the body as fat (adipose tissue). 
 These macronutrients are commonly found in foods (though in different proportions). 
-Eliminating a single nutrient is not likely a sustainable solution -
- we eat foods, not nutrients in isolation.
+Eliminating a single nutrient is not likely a sustainable solution - we eat foods, 
+not nutrients in isolation.
 
 Humans need three macronutrients to survive.
 
