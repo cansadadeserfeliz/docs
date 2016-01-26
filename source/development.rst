@@ -137,6 +137,40 @@ So we can use it in our CSS:
   
 Angular has build-in email, url, numbers (min/max) validation.
 
+**Directives**
+
+* Template-expanding Directives
+* Expressing complex UI
+* Calling events and registering event handlers
+* Reusing common components
+
+*Element directive*:
+
+::
+
+  <product-title></product-title>
+  
+  app.directive('productTitle', function() {
+    return {
+      // a configuration object defining how your directive will work
+      restrict: 'E',  // directive type - Element
+      templateURL: 'product-title.html'
+    };
+  });
+  
+*Attribute directive*:
+
+::
+
+  <h3 product-title></h3>
+  
+  app.directive('productTitle', function() {
+    return {
+      restrict: 'A',  // directive type - Attribute
+      templateURL: 'product-title.html'
+    };
+  });
+
 =======
 Ruby
 =======
