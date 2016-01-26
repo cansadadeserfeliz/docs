@@ -154,7 +154,7 @@ Angular has build-in email, url, numbers (min/max) validation.
     return {
       // a configuration object defining how your directive will work
       restrict: 'E',  // directive type - Element
-      templateURL: 'product-title.html'
+      templateUrl: 'product-title.html'
     };
   });
   
@@ -167,9 +167,53 @@ Angular has build-in email, url, numbers (min/max) validation.
   app.directive('productTitle', function() {
     return {
       restrict: 'A',  // directive type - Attribute
-      templateURL: 'product-title.html'
+      templateUrl: 'product-title.html'
     };
   });
+  
+*Directive COntrollers*:
+
+::
+
+  <product-panels></product-panels>
+
+  app.directive('productPanels', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'product-panels.html',
+      controllerAs: 'panels',
+      controller: function() {
+      
+      }
+    };
+  });
+  
+**Dependencies**
+
+::
+
+  // index.html
+  
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+  <script src="products.js"></script>
+
+  // app.js
+  
+  (function(){
+    var app = angular.module('store', ['store-products']);
+    
+    app.controller('storeController'), function { ... });
+  })();
+
+  // products.js
+  
+  (function(){
+    var app = angular.module('store-products', []);
+    
+    app.directive('productTitle'), function { ... });
+    app.directive('productPanels'), function { ... });
+  })();
 
 =======
 Ruby
