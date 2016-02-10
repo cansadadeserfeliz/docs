@@ -1,5 +1,4 @@
-Medicine & Healthcare 
-=====================
+# Medicine & Healthcare
 
 In the 1980s and 1990s, many food manufacturers reduced the fat content 
 in processed food products and instead added more sugar. 
@@ -18,7 +17,7 @@ not nutrients in isolation.
 
 Humans need three macronutrients to survive.
 
-* Carbohydrate-rich Foods
+## Carbohydrate-rich Foods
 
 **Гликемический индекс** (glycemic (glycaemic) index, сокращённо GI) — показатель 
 влияния продуктов питания после их употребления на уровень сахара в крови. 
@@ -34,7 +33,7 @@ In contrast, low glycemic index foods (which tend to have higher amounts of fibe
 lead to a slower release of glucose into the bloodstream, 
 a less extreme release of insulin, and more stable blood sugar levels.
 
-* Animal & Plant-based Proteins. Amino Acids
+## Animal & Plant-based Proteins. Amino Acids
 
 Our body can produce many amino acids, but some must be supplemented through the diet. 
 Though *animal sources of protein tend to be complete* (providing all essential amino acids), 
@@ -51,7 +50,7 @@ as in many global food traditions.
 
 Proteins act as building blocks for lean tissues in our bodies.
 
-* Fats
+## Fats
 
 - energy storadge;
 - insulation;
@@ -79,3 +78,5 @@ Saturated fats can raise LDL cholesterol but have not been shown to reduce HDL c
 as significantly as trans fats.
 
 **Nutrient density** refers to the concept of looking at the nutritional value of a food divided by its energy content (or total calories). It does not consider food cost. Highly processed foods tend to have a large amount of calories with relatively little nutritional value (and are thus not very nutrient dense). In comparison, a fresh, whole food like spinach tends to be low in calories but high in nutritional value, making it very nutrient dense.
+
+Removing certain nutrients from foods during extensive processing decreases nutrient content and prevents foods from spoiling quickly, thus extending shelf life. Processed foods tend to have a higher added salt, fat, and sugar content to make them attractive to the consumer.
