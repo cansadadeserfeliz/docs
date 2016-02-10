@@ -101,7 +101,7 @@ In English:
 
 ---
 
-[Анна Сонькина: О здоровье здоровых детей (youtube)](https://www.youtube.com/watch?v=n-fwKkT-dK0)
+[Анна Сонькина: О здоровье здоровых детей (youtube)](https://www.youtube.com/watch?v=n-fwKkT-dK0) ([текст](http://www.pravmir.ru/o-zdorove-zdorovyih-detey/))
 
 ---
 
