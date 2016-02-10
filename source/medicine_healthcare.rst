@@ -77,3 +77,5 @@ Some *unsaturated fats* (in processed foods) have unstable chemical bonds that c
 which tend to lower HDL cholesterol (good cholesterol) while raising LDL cholesterol (bad cholesterol). 
 Saturated fats can raise LDL cholesterol but have not been shown to reduce HDL cholesterol 
 as significantly as trans fats.
+
+**Nutrient density** refers to the concept of looking at the nutritional value of a food divided by its energy content (or total calories). It does not consider food cost. Highly processed foods tend to have a large amount of calories with relatively little nutritional value (and are thus not very nutrient dense). In comparison, a fresh, whole food like spinach tends to be low in calories but high in nutritional value, making it very nutrient dense.
