@@ -36,9 +36,11 @@ Designed by Misco Hevery. First released in June 2012.
 
 Create an application:
 
+```javascript
     (function(){
       var app = angular.module('store', []);
     })();
+```
 
 ## Expressions
 
