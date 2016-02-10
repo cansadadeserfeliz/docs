@@ -42,20 +42,20 @@ Thus, plant sources of protein tend to be overall healthier sources of protein -
 especially when multiple plant sources of protein are combined, 
 as in many global food traditions.
 
-- lean tissue;
-- cell signaling;
-- hormonal proteins;
-- immune function;
-- cellular structure;
+* lean tissue;
+* cell signaling;
+* hormonal proteins;
+* immune function;
+* cellular structure;
 
 Proteins act as building blocks for lean tissues in our bodies.
 
 ## Fats
 
-- energy storadge;
-- insulation;
-- brain development;
-- protection of internal organs;
+* energy storadge;
+* insulation;
+* brain development;
+* protection of internal organs;
 
 Dietary fats: saturated fats (animal fats: lard and butter) 
 and unsaturated fats (omega 3, fish oil, nuts, avocados, flax seeds, vegetable oils).
@@ -80,3 +80,35 @@ as significantly as trans fats.
 **Nutrient density** refers to the concept of looking at the nutritional value of a food divided by its energy content (or total calories). It does not consider food cost. Highly processed foods tend to have a large amount of calories with relatively little nutritional value (and are thus not very nutrient dense). In comparison, a fresh, whole food like spinach tends to be low in calories but high in nutritional value, making it very nutrient dense.
 
 Removing certain nutrients from foods during extensive processing decreases nutrient content and prevents foods from spoiling quickly, thus extending shelf life. Processed foods tend to have a higher added salt, fat, and sugar content to make them attractive to the consumer.
+
+
+# Medicine
+
+---
+
+> Обычные респираторные вирусные инфекции, кои в нашей культуре называются «простуда и грипп», проходят самостоятельно. Сопли, кашель, температура ни в каком лечении не нуждаются. Ускорить выздоровление при таком вирусе или предотвратить развитие осложнений невозможно. Но некоторые осложнения надо уметь вовремя заметить и иногда лечить. Поэтому самое разумное поведение родителей с ребенком, который заболел простудой, заключается не в лечении, а в грамотном наблюдении. Кроме того, нужно помнить, что обезвоживание — один из самых важных факторов тяжелого течения инфекционного заболевания. Поэтому основная рекомендация врачей при обычных болезнях у детей — это питье, питье и еще раз питье. <...> Эффективных лекарств от вирусных инфекций не существует. Для профилактики работает только вакцинация, и она существует только против гриппа. <...> Плюс неспецифическая, как мы ее называем, профилактика — здоровый образ жизни, привычка к низким температурам, физическая активность, полноценный сон, хороший психологический климат, мытье рук.
+
+> В этическом кодексе британских врачей прописано: просвещение — часть профессиональной ответственности. 
+
+[Slon: Педиатр Анна Сонькина: «Эффективных лекарств от вирусных инфекций нет»](https://slon.ru/special/chaika/pediatrist)
+
+Русскоязычные форумы, созданные врачами: [«Русмедсервер»](http://forums.rusmedserv.com/)и более новый, более активный [Medspecial.ru](http://medspecial.ru/) ([FB](https://www.facebook.com/medspecial.ru)). Врачи на этих ресурсах консультируют исключительно на добровольных началах, они бесплатно тратят свое свободное время.
+
+In English:
+
+* [Uptodate](http://www.uptodate.com/home)
+* [Mayo Clinic](http://www.mayoclinic.org/)
+
+---
+
+[Анна Сонькина: О здоровье здоровых детей (youtube)](https://www.youtube.com/watch?v=n-fwKkT-dK0)
+
+---
+
+## Learning
+
+### Courses
+
+* [Stanford Introduction to Food and Health by Coursera](https://www.coursera.org/learn/food-and-health)
+
+### Books
