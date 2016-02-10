@@ -2,4 +2,4 @@
 
 ### Links
 
-GitHub Flow: https://guides.github.com/introduction/flow/
+* [GitHub Flow](https://guides.github.com/introduction/flow/)
