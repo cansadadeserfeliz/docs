@@ -202,19 +202,24 @@ Angular has build-in email, url, numbers (min/max) validation.
 
 ### Attribute directive
 
+```html
     <h3 product-title></h3>
-  
+```
+```javascript
     app.directive('productTitle', function() {
       return {
         restrict: 'A',  // directive type - Attribute
         templateUrl: 'product-title.html'
       };
     });
-  
+```
+
 ## Directive Controllers
 
+```html
     <product-panels></product-panels>
-
+```
+```javascript
     app.directive('productPanels', function() {
       return {
         restrict: 'E',
@@ -225,15 +230,18 @@ Angular has build-in email, url, numbers (min/max) validation.
         }
       };
     });
-  
+```
+
 ## Dependencies
 
+```html
     // index.html
   
     <script src="angular.js"></script>
     <script src="app.js"></script>
     <script src="products.js"></script>
-
+```
+```javascript
     // app.js
   
     (function(){
@@ -250,7 +258,8 @@ Angular has build-in email, url, numbers (min/max) validation.
       app.directive('productTitle'), function() { ... });
       app.directive('productPanels'), function() { ... });
     })();
-  
+```
+
 ## Services
 
 Allow to get data from API.
@@ -261,6 +270,7 @@ Allow to get data from API.
 
 ``$log`` - filter in array
 
+```javascript
     // app.js
 
     (function(){
@@ -275,7 +285,7 @@ Allow to get data from API.
         });
       } ]);
     })();
-
+```
 
 * https://jakearchibald.com/2014/using-serviceworker-today/
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
