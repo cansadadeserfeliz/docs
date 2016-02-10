@@ -88,6 +88,8 @@ Another project generator: http://yeoman.io/
 
 AngularJS MTV Meetup: Best Practices (2012/12/11): https://www.youtube.com/watch?v=ZhfUv0spHCY
 
+* 
+
 Create an application:
 
 ::

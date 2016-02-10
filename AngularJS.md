@@ -2,7 +2,7 @@
 
 Designed by Misco Hevery. First released in June 2012.
 
-An application skeleton for a typical AngularJS web app: https://github.com/angular/angular-seed
+[An application skeleton for a typical AngularJS web app](https://github.com/angular/angular-seed).
 
     app/                    --> all of the source files for the application
       app.css               --> default stylesheet
@@ -30,9 +30,9 @@ An application skeleton for a typical AngularJS web app: https://github.com/angu
       protractor-conf.js    --> Protractor config file
       scenarios.js          --> end-to-end scenarios to be run by Protractor
 
-Another project generator: http://yeoman.io/
+[Yeoman project generator](http://yeoman.io/)
 
-AngularJS MTV Meetup: Best Practices (2012/12/11): https://www.youtube.com/watch?v=ZhfUv0spHCY
+[AngularJS MTV Meetup: Best Practices (2012/12/11)](https://www.youtube.com/watch?v=ZhfUv0spHCY)
 
 Create an application:
 
@@ -98,16 +98,16 @@ Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOva
 
 ## Form validation
 
-**Add validation to form**:
+Add validation to a form
 
-1. Turn off HTML validations (of browsers)
+1. Turn off HTML validations (of browsers):
 
     <form name="reviewForm" novalidate>
-  
-2. Mark required fields
+
+2. Mark required fields:
 
     <input nama="author" required>
-  
+
 3. Check if validation works (via form name):
 
     <div>review form is {{reviewForm.$valid}}</div>
@@ -134,7 +134,7 @@ And on change the class gets updated:
 
 When we have a valid email it becomes:
 
-  <input name="author" type="email" class="ng-dirty ng-valid" />
+    <input name="author" type="email" class="ng-dirty ng-valid" />
 
 So we can use it in our CSS:
 
@@ -244,16 +244,17 @@ Allow to get data from API.
     })();
 
 
-https://jakearchibald.com/2014/using-serviceworker-today/
+* https://jakearchibald.com/2014/using-serviceworker-today/
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* https://github.com/angular-ui/ui-router
+* https://github.com/johnpapa/angular-styleguide
+* https://github.com/toddmotto/angular-styleguide
+* http://www.codelord.net/2015/05/25/dont-use-$https-success/
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+## Tests
 
-https://github.com/angular-ui/ui-router
+http://www.seleniumhq.org/projects/webdriver/
 
-https://github.com/johnpapa/angular-styleguide
+## Learning
 
-https://github.com/toddmotto/angular-styleguide
-
-http://www.codelord.net/2015/05/25/dont-use-$https-success/
-
-Tests: http://www.seleniumhq.org/projects/webdriver/
+* [AngularJS Learning](https://github.com/jmcunningham/AngularJS-Learning)
