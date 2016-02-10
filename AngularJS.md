@@ -56,19 +56,27 @@ Directives - HTML annotations that trigger Javascript behaviors.
 
 ``ng-app`` - attach the Application Module to the page
 
+```html
     <html ng-app="store">
+```
 
 ``ng-controller`` - attach a Controller function to the pages
 
+```html
     <body ng-controller="StoreController as store">
+```
 
 ``ng-show`` / ``ng-hide`` - display a section based on an Expression
 
+```html
     <h1 ng-show="name"> Hello, {{ name }}! <h1>
+```
 
 ``ng-repeat`` - repeat a section for each item in an Array
 
+```html
     <li ng-repeat="product in store.products"> {{ product.name }} </li>
+```
 
 *Two-way data binding*: ``ng-model`` directive.
 
@@ -90,11 +98,15 @@ Formatting with filters.
   
 ## Images
 
+```html
     <img src="{{ product.images[0].full }}" />  --> ERROR
-  
+```
+
 The browser tries to load images *before* the Expression evaluates.
 
+```html
     <img ng-src="{{ product.images[0].full }}" />  --> ERROR
+```
 
 Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOvab
 
@@ -104,42 +116,57 @@ Add validation to a form
 
 1. Turn off HTML validations (of browsers):
 
+```html
     <form name="reviewForm" novalidate>
+```
 
 2. Mark required fields:
 
+```html
     <input nama="author" required>
+```
 
 3. Check if validation works (via form name):
 
+```html
     <div>review form is {{reviewForm.$valid}}</div>
+```
 
 4. Prevent the form from getting submitted:
 
+```html
     <form name="reviewForm" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
-  
+```
+
 5. Show the user why the form isn't valid.
 
 Angular adds some classes:
 
+```html
     <input name="author" type="email" class="ng-pristine ng-invalid" />
-  
+```
+
 ``ng-pristine`` - the field hasn't been touched.
 
 ``ng-invalid`` - the field is not valid.
 
 And on change the class gets updated:
- 
+
+```html
     <input name="author" type="email" class="ng-dirty ng-invalid" />
-  
+```
+
 ``ng-dirty`` - the field was changed.
 
 When we have a valid email it becomes:
 
+```html
     <input name="author" type="email" class="ng-dirty ng-valid" />
+```
 
 So we can use it in our CSS:
 
+```css
     .ng-invalid.ng-dirty {
       border-color: #FA787E;  // red
     }
@@ -147,7 +174,8 @@ So we can use it in our CSS:
     .ng-valid.ng-dirty {
       border-color: #78FA89; // green
     }
-  
+```
+
 Angular has build-in email, url, numbers (min/max) validation.
 
 ## Directives
@@ -159,8 +187,10 @@ Angular has build-in email, url, numbers (min/max) validation.
 
 ### Element directive
 
-     <product-title></product-title>
-  
+```html
+    <product-title></product-title>
+```
+```javascript
     app.directive('productTitle', function() {
       return {
         // a configuration object defining how your directive will work
@@ -168,7 +198,8 @@ Angular has build-in email, url, numbers (min/max) validation.
         templateUrl: 'product-title.html'
       };
     });
-  
+```
+
 ### Attribute directive
 
     <h3 product-title></h3>
