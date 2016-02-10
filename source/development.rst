@@ -1,9 +1,9 @@
 Development
 ===========
 
-==========
+============
 Sublime Text
-==========
+============
 
 Installation
 
@@ -52,6 +52,42 @@ Install: ``npm install stylus -g``
 Angular.JS
 ==========
 
+Designed by Misco Hevery. First released in June 2012.
+
+An application skeleton for a typical AngularJS web app: https://github.com/angular/angular-seed
+
+::
+
+    app/                    --> all of the source files for the application
+      app.css               --> default stylesheet
+      components/           --> all app specific modules
+        version/              --> version related components
+          version.js                 --> version module declaration and basic "version" value service
+          version_test.js            --> "version" value service tests
+          version-directive.js       --> custom directive that returns the current app version
+          version-directive_test.js  --> version directive tests
+          interpolate-filter.js      --> custom interpolation filter
+          interpolate-filter_test.js --> interpolate filter tests
+      view1/                --> the view1 view template and logic
+        view1.html            --> the partial template
+        view1.js              --> the controller logic
+        view1_test.js         --> tests of the controller
+      view2/                --> the view2 view template and logic
+        view2.html            --> the partial template
+        view2.js              --> the controller logic
+        view2_test.js         --> tests of the controller
+      app.js                --> main application module
+      index.html            --> app layout file (the main html template file of the app)
+      index-async.html      --> just like index.html, but loads js files asynchronously
+    karma.conf.js         --> config file for running unit tests with Karma
+    e2e-tests/            --> end-to-end tests
+      protractor-conf.js    --> Protractor config file
+      scenarios.js          --> end-to-end scenarios to be run by Protractor
+
+Another project generator: http://yeoman.io/
+
+AngularJS MTV Meetup: Best Practices (2012/12/11): https://www.youtube.com/watch?v=ZhfUv0spHCY
+
 Create an application:
 
 ::
@@ -59,7 +95,13 @@ Create an application:
     (function(){
       var app = angular.module('store', []);
     })();
-    
+
+**Expressions**
+
+* Evaluated against an Angular *scope* object.
+* No conditionals, loops or exceptions.
+* Expressions enclosed in {{ expression }}
+
 **Directives** - HTML annotations that trigger Javascript behaviors.
 
 ``ng-app`` - attach the Application Module to the page
@@ -85,6 +127,8 @@ Create an application:
 ::
 
   <li ng-repeat="product in store.products"> {{ product.name }} </li>
+
+*Two-way data binding*: ``ng-model`` directive.
 
 **Modules** - Where our application components live.
 
@@ -288,6 +332,21 @@ Allow to get data from API.
       });
     } ]);
   })();
+
+
+https://jakearchibald.com/2014/using-serviceworker-today/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://github.com/angular-ui/ui-router
+
+https://github.com/johnpapa/angular-styleguide
+
+https://github.com/toddmotto/angular-styleguide
+
+http://www.codelord.net/2015/05/25/dont-use-$https-success/
+
+Tests: http://www.seleniumhq.org/projects/webdriver/
 
 
 =======
