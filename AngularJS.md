@@ -32,15 +32,31 @@ Designed by Misco Hevery. First released in June 2012.
 
 [Yeoman project generator](http://yeoman.io/)
 
-[AngularJS MTV Meetup: Best Practices (2012/12/11)](https://www.youtube.com/watch?v=ZhfUv0spHCY)
+[AngularJS MTV Meetup: Best Practices (2012/12/11)](https://www.youtube.com/watch?v=ZhfUv0spHCY)#
 
-Create an application:
+## Module
+
+An Angular module is a collection of:
+* Controllers
+* Directives
+* Filters
+* Services
+* Other configuration information
 
 ```javascript
     (function(){
       var app = angular.module('store', []);
     })();
 ```
+
+[Here's the calling order](http://stackoverflow.com/a/20664122/914332):
+
+1. `app.config()`
+2. `app.run()`
+3. *directive's compile functions (if they are found in the dom)*
+4. `app.controller()`
+5. *directive's link functions (again, if found)*
+
 
 ## Expressions
 
@@ -112,7 +128,9 @@ Codepen with example from CodeSchool course: http://codepen.io/vero4ka/pen/OMOva
 
 ## Form validation
 
-Add validation to a form
+[AngularJS form validaion](https://scotch.io/tutorials/angularjs-form-validation)
+
+Add validation to a form:
 
 1. Turn off HTML validations (of browsers):
 
@@ -232,6 +250,12 @@ Angular has build-in email, url, numbers (min/max) validation.
     });
 ```
 
+## Routing
+
+* [ui.router wiki](https://github.com/angular-ui/ui-router/wiki)
+* [ui.router documentation](https://angular-ui.github.io/ui-router/site/#/api/ui.router)
+* [AngularJS + UI Router: проверка авторизации и прав доступа](https://habrahabr.ru/post/245049/)
+
 ## Dependencies
 
 ```html
@@ -298,6 +322,40 @@ Allow to get data from API.
 
 http://www.seleniumhq.org/projects/webdriver/
 
+* [E2E Testing](https://docs.angularjs.org/guide/e2e-testing)
+* [Protractor](https://angular.github.io/protractor/#/)
+* [AngularJS Testing - Unit Testing Tutorials](http://www.bradoncode.com/tutorials/angularjs-unit-testing/)
+
 ## Learning
 
 * [AngularJS Learning](https://github.com/jmcunningham/AngularJS-Learning)
+
+## Related information
+
+* [TypeScript: общие впечатления](https://habrahabr.ru/post/258957/)
+* [GulpJS — фантастически быстрый сборщик проектов](https://habrahabr.ru/post/208890/)
+* wrench.js - Recursive file operations in Node.js
+
+### ServiceWorker
+
+https://www.chromium.org/blink/serviceworker
+
+A service worker is a script that is run by your browser in the background.
+
+Features: push notifications, the ability to intercept and handle network requests, including programmatically managing a cache of responses.
+
+* [Introduction to Service Worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)
+* [Is Service Worker Ready?](https://jakearchibald.github.io/isserviceworkerready/)
+* [Using ServiceWorker in Chrome today by Jake Archibald](https://jakearchibald.com/2014/using-serviceworker-today/)
+* [Jake Archibald's "simple-serviceworker-tutorial"](https://github.com/jakearchibald/simple-serviceworker-tutorial)
+
+* [Manifest File Format](https://developer.chrome.com/extensions/manifest)
+
+### Promises
+
+* [JavaScript Promises](https://www.promisejs.org/)
+
+Promise – это специальный объект, который содержит своё состояние. Вначале `pending` («ожидание»), затем – одно из: `fulfilled` («выполнено успешно») или `rejected` («выполнено с ошибкой»)
+
+* [Что такое Promise?](https://learn.javascript.ru/promise)
+* [Обещания JavaScript](https://habrahabr.ru/post/209662/)
