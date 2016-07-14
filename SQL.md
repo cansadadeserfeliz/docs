@@ -1,9 +1,93 @@
-# SQL
+# PostgreSQL
 
 `auto_explain`: [https://www.postgresql.org/docs/9.4/static/auto-explain.html](https://www.postgresql.org/docs/9.4/static/auto-explain.html)
 
+* Installation: https://help.ubuntu.com/community/PostgreSQL
+* Creating a user: http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
+* Set password: http://stackoverflow.com/a/7696398/914332
 
-## Basic MySQL commands
+### make dump of existing database
+
+    $ pg_dump -O -U postgres database_name | gzip > /tmp/dump.sql.gz
+
+### create dump without data
+
+    $ pg_dump test_db_development -s > /tmp/createdb.sql
+
+#### load database from dump
+
+    $ psql -U username -f /tmp/dump.sql.gz
+    $ psql -U username -d activar -f ~/Downloads/dump.sql
+
+    $ sudo -u postgres psql db_development < ~/Downloads/dump.sql
+
+```sql
+CREATE EXTENSION unaccent;
+CREATE EXTENSION hstore;
+```
+
+#### allow user to acces tables, functions and sequences
+```sql
+GRANT ALL ON ALL TABLES IN SCHEMA public TO user;
+GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO user;
+GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO user;
+```
+
+#### set password for all users as 'demo'
+```sql
+UPDATE auth_user set password ='bcrypt$$2a$12$udndek2c62VlLqWnAYU5qePYQ7SS9rmfnxIuGNhGR4EMfFadQsMuG';
+```
+or 
+```sql
+UPDATE userprofile_user set password ='bcrypt$$2a$12$udndek2c62VlLqWnAYU5qePYQ7SS9rmfnxIuGNhGR4EMfFadQsMuG';
+```
+
+#### First login as postgres user:
+
+    $ sudo su - postgres
+
+#### connect
+
+    $ psql
+
+#### show databases:
+
+    \l
+
+#### connect to the required db: 
+
+    $ psql -d databaseName
+
+#### show all tables:
+
+    \dt
+
+#### show columns:
+
+    \d  social_auth_association
+
+#### describe table:
+
+    \d+ social_auth_association
+
+#### rename constraint 
+```sql
+ALTER TABLE name RENAME CONSTRAINT constraint_name TO new_constraint_name;
+```
+#### create unique constraint
+```sql
+ALTER TABLE tablename ADD CONSTRAINT constraintname UNIQUE (columns);
+```
+#### Duplicate database 
+```sql
+CREATE DATABASE newdb WITH TEMPLATE olddb;
+```
+or
+
+    $ createdb -T olddb newdb
+
+
+# MySQL
 
     $ mysql
 
