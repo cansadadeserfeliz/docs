@@ -1,5 +1,8 @@
 # SQL
 
+`auto_explain`: [https://www.postgresql.org/docs/9.4/static/auto-explain.html](https://www.postgresql.org/docs/9.4/static/auto-explain.html)
+
+
 ## Basic MySQL commands
 
     $ mysql
