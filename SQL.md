@@ -2,11 +2,10 @@
 
 ## Basic MySQL commands
 
-::
-
     $ mysql
 
-    # show all databases 
+#### show all databases 
+
     mysql> SHOW DATABASES;
     +--------------------+
     | Database           |
@@ -17,7 +16,9 @@
     2 rows in set (0.00 sec)
 
     mysql> use test;
-    Database changed
+
+Database changed
+
     mysql> SHOW TABLES;
     +-----------------+
     | Tables_in_test  |
@@ -37,7 +38,8 @@
     mysql> CREATE DATABASE sales;
     mysql> DROP DATABASE sales;
 
-    # get table structure
+#### get table structure
+
     mysql> DESCRIBE City;
     +-------------+----------+------+-----+---------+----------------+
     | Field       | Type     | Null | Key | Default | Extra          |
@@ -50,7 +52,8 @@
     +-------------+----------+------+-----+---------+----------------+
     5 rows in set (0.00 sec)
 
-    # count all the rows from table
+#### count all the rows from table
+
     mysql> SELECT COUNT(*) FROM Country;
     +----------+
     | COUNT(*) |
@@ -109,7 +112,8 @@
     +--------------------------------+
     7 rows in set (0.00 sec)
 
-    # Get counties that has no cities
+#### Get counties that has no cities
+
     mysql> SELECT Name FROM Country WHERE Code NOT IN (SELECT DISTINCT CountryCode FROM City);
     +----------------------------------------------+
     | Name                                         |
@@ -124,5 +128,6 @@
     +----------------------------------------------+
     7 rows in set (0.31 sec)
 
-    # numbre of cities for each country
+#### numbre of cities for each country
+
     mysql> SELECT CountryCode, COUNT(CountryCode) FROM City GROUP BY CountryCode;
