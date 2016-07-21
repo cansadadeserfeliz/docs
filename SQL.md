@@ -5,6 +5,12 @@
 * Installation: https://help.ubuntu.com/community/PostgreSQL
 * Creating a user: http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
 * Set password: http://stackoverflow.com/a/7696398/914332
+ 
+### Postgresql reset sequence
+
+```sql
+SELECT setval('cms_page_id_seq', (SELECT MAX(id) FROM cms_page));
+```
 
 ### make dump of existing database
 
