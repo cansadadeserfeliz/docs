@@ -128,6 +128,8 @@ In English:
 
 [Antibiotics Aren't Always the Answer](http://www.cdc.gov/features/getsmart/)
 
+[«Главная беда – гиперлечение». Гинеколог – о женских болезнях, контрацепции и беременности](https://slon.ru/posts/71466)
+
 ---
 
 ## Learning
