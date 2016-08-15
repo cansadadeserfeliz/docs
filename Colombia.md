@@ -1,8 +1,8 @@
 # Historia
 
-| Período | Presidente | Partido | Comentarios |
+| Período | | Presidente | Partido | Comentarios |
 |---|---|---|---|---|
-| 1 de abril de 1837 - 1 de abril de 1841 | José Ignacio de Márquez | Grupo "Ministerial" y posteriormente Conservador | El movimiento se senominó *Guerra de los Supremos* por la tendencia de los comandantes locales a titularse "jefes supremos" de esto y aquello. |
+| 1 de abril de 1837 - 1 de abril de 1841 | ![](https://upload.wikimedia.org/wikipedia/commons/e/e7/Jos%C3%A9_Ignacio_de_M%C3%A1rquez_1.jpg) | José Ignacio de Márquez | Grupo "Ministerial" y posteriormente Conservador | El movimiento se senominó *Guerra de los Supremos* por la tendencia de los comandantes locales a titularse "jefes supremos" de esto y aquello. |
 
 # Política
 
