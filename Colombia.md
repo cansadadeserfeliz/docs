@@ -8,7 +8,7 @@
 | 1 de abril de 1845 - 1 de abril de 1849	| ![](https://upload.wikimedia.org/wikipedia/commons/a/ac/Portrait_of_Tom%C3%A1s_Cipriano_de_Mosquera.jpg) |	Tomás Cipriano de Mosquera (1.er periodo)	| Independiente, con apoyo del sector Ministerial (posteriormente conservadores) | Pertenecía a uno de los clanes aristocráticos de Popayán. Un fanático admirador de Bolívar. Obras públicas y progresos técnicos. |
 | 1 de abril de 1849 - 1 de abril de 1853	| ![](https://upload.wikimedia.org/wikipedia/commons/c/c8/General_Jos%C3%A9_Hilario_L%C3%B3pez.jpg)	| José Hilario López	| Liberal | El *boom* del tabaco. La produccón y venta de tabaco quedaron totalmente liberadas del control estadal. Se aumentó la desigualdad económica en el país. |
 |1 de abril de 1853 - 17 de abril de 1854	| ![](https://upload.wikimedia.org/wikipedia/commons/5/5c/Jos%C3%A9_Mar%C3%ADa_Obando_del_Campo.jpg) | José María Obando	| Liberal | **La Constitución de 1853.** Se abolió la esclavitud en el país. Por el medio de una ley de mayo 1851 todos los esclavos en la Nueva Granada recibieron la libertad el 1 enero del año siguiente. TOlerancia religiosa y la libertad de cultos. La introducción del matrimnio civil, la legalización del divorcio. |
-| 17 de abril de 1854 - 4 de diciembre de 1854 || José María Melo	| Liberal (sector "draconiano")	De facto. | Llegó al poder por un golpe de Estado apoyado por los artesanos de Bogotá. Murió fusilado en México. |
+| 17 de abril de 1854 - 4 de diciembre de 1854 | ![](https://upload.wikimedia.org/wikipedia/commons/c/c7/Jose_Maria_Melo_1.jpg) | José María Melo	| Liberal (sector "draconiano")	De facto. | Llegó al poder por un golpe de Estado apoyado por los artesanos de Bogotá. Murió fusilado en México. |
 
 # Política
 
