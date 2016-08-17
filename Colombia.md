@@ -11,6 +11,8 @@
 | 17 de abril de 1854 - 4 de diciembre de 1854 | ![](https://upload.wikimedia.org/wikipedia/commons/c/c7/Jose_Maria_Melo_1.jpg) | José María Melo	| Liberal (sector "draconiano")	De facto. | Llegó al poder por un golpe de Estado apoyado por los artesanos de Bogotá. Fue enviado a exilio. Murió fusilado en México. |
 | 21 de abril de 1854 - 5 de agosto de 1854	| |	Tomás Herrera	| Liberal (sector "gólgota") |	Nacido en el departamento de Panamá. |
 | 5 de agosto de 1854 - 1 de abril de 1855 | |	José de Obaldía	| Liberal (sector "gólgota") |	Nacido en el departamento de Panamá. Su hijo, José Domingo de Obaldía, fue presidente de Panamá. |
+| 1 de abril de 1855 - 1 de abril de 1857	|  |	Manuel María Mallarino |	Conservador | |	
+| 1 de abril de 1857 - 22 de mayo de 1858	|  |	Mariano Ospina Rodríguez |	Conservador | Primer presidente elegido mediante sufragio directo. |
 
 # Política
 
