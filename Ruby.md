@@ -23,3 +23,21 @@ You can even replace them if necessary.
 Break up a poem, reverse it, reassemble it: ``poem.lines.to_a.reverse.join``.
 
 [Complete list of string methods](http://ruby-doc.org/core-2.3.0/String.html)
+
+
+# Rails
+
+For tests:
+
+    binding.pry()
+    
+Run tests:
+
+    zeus test [file name]
+    
+Migrations
+
+    zeus generate migration AName
+    rake db:migrate:status
+    zeus rake db:test:clone_structure
+    rake db:migrate:up VERSION=123
