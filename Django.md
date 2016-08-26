@@ -4,7 +4,9 @@
 
 ### Emty choice
 
-    from django.db.models.fields import BLANK_CHOICE_DASH
+```python
+from django.db.models.fields import BLANK_CHOICE_DASH
+```
 
 ### How to set a label for a field that is a method
 
