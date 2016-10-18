@@ -31,6 +31,7 @@ SELECT setval('cms_page_id_seq', (SELECT MAX(id) FROM cms_page));
 
 ```sql
 \COPY enterprises TO '/tmp/empresas.csv' DELIMITER ';' CSV HEADER;
+COPY (SELECT * FROM country WHERE country_name LIKE 'A%') TO '/usr1/proj/bray/sql/a_list_countries.copy';
 ```
 
 ```sql
