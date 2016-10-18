@@ -26,6 +26,12 @@ SELECT setval('cms_page_id_seq', (SELECT MAX(id) FROM cms_page));
     $ psql -U username -d activar -f ~/Downloads/dump.sql
 
     $ sudo -u postgres psql db_development < ~/Downloads/dump.sql
+    
+### download as csv
+
+```sql
+\COPY enterprises TO '/tmp/empresas.csv' DELIMITER ';' CSV HEADER;
+```
 
 ```sql
 CREATE EXTENSION unaccent;
