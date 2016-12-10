@@ -12,11 +12,11 @@
 | 21 de abril de 1854 - 5 de agosto de 1854	| |	Tomás Herrera	| Liberal (sector "gólgota") |	Nacido en el departamento de Panamá. |
 | 5 de agosto de 1854 - 1 de abril de 1855 | |	José de Obaldía	| Liberal (sector "gólgota") |	Nacido en el departamento de Panamá. Su hijo, José Domingo de Obaldía, fue presidente de Panamá. |
 | 1 de abril de 1855 - 1 de abril de 1857	|  |	Manuel María Mallarino |	Conservador | |	
-| 1 de abril de 1857 - 22 de mayo de 1858	|  |	Mariano Ospina Rodríguez |	Conservador | Primer presidente elegido mediante sufragio directo. Caminaba por las calles de Bogotá sin guardia. |
+| 1 de abril de 1857 - 22 de mayo de 1858	|  |	**Mariano Ospina Rodríguez** |	Conservador | Primer presidente elegido mediante sufragio directo. Caminaba por las calles de Bogotá sin guardia. |
 | 22 de mayo de 1858 - 1 de abril de 1861	| |	Mariano Ospina Rodríguez	| Conservador	| Fundador del Partido Conservador Colombiano. En 1859, Pedro Fernández Madrid Domínguez, hijo del prócer y ex-presidente José Fernández Madrid, recibió la Designatura Presidencial (Colombia). |
 | 25 de enero de 1861 - 18 de julio de 1861	| |	Juan José Nieto Gil	| Liberal	| Debido a un vacío de poder entre los mandatos del conservador Mariano Ospina Rodríguez y el general liberal Tomás Cipriano de Mosquera. Fue el primer afrodescendiente presidente de la república y único presidente atlanticense. |
 |1 de abril de 1861 - 10 de junio de 1861	| |	Bartolomé Calvo	| Conservador	| Asume como Procurador General. Compartió la magistratura presidencial, independientemente, con Juan José Nieto Gil. |
-| 18 de julio de 1861 - 10 de febrero de 1863	| |	**Tomás Cipriano de Mosquera** (2o periodo) |	Liberal Radical	| Tomó el poder por golpe de estado, luego de triunfar en la guerra civil. |
+| 18 de julio de 1861 - 10 de febrero de 1863	| |	**Tomás Cipriano de Mosquera** (2o periodo) |	Liberal Radical	| Tomó el poder por golpe de estado, luego de triunfar en la guerra civil.EN exilio en Guatemala estudiaba industria de café. Medidas anticlericales. |
 
 # Política
 
