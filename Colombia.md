@@ -17,6 +17,9 @@
 | 25 de enero de 1861 - 18 de julio de 1861	| |	Juan José Nieto Gil	| Liberal	| Debido a un vacío de poder entre los mandatos del conservador Mariano Ospina Rodríguez y el general liberal Tomás Cipriano de Mosquera. Fue el primer afrodescendiente presidente de la república y único presidente atlanticense. |
 |1 de abril de 1861 - 10 de junio de 1861	| |	Bartolomé Calvo	| Conservador	| Asume como Procurador General. Compartió la magistratura presidencial, independientemente, con Juan José Nieto Gil. |
 | 18 de julio de 1861 - 10 de febrero de 1863	| |	**Tomás Cipriano de Mosquera** (2o periodo) |	Liberal Radical	| Tomó el poder por golpe de estado, luego de triunfar en la guerra civil.EN exilio en Guatemala estudiaba industria de café. Medidas anticlericales. |
+| 10 de febrero de 1863 - 14 de mayo de 1863	|  | Ejecutivo Plural: - Froilán Largacha [Presidente] - Tomás Cipriano de Mosquera - José Hilario López - Eustorgio Salgar - Santos Gutiérrez Prieto	| Liberales |  |
+| 14 de mayo de 1863 - 1 de abril de 1864	| | Tomás Cipriano de Mosquera (3.er periodo) |	Liberal Radical |  |	
+| 1 de abril de 1864 - 1 de abril de 1866 |	| **Manuel Murillo Toro** (1.er periodo)	| Liberal Radical	| Primer presidente civil reelegido. La figura más notoria de los liberales radicales. |
 
 # Política
 
