@@ -45,6 +45,10 @@ GRANT ALL ON ALL TABLES IN SCHEMA public TO user;
 GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO user;
 GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO user;
 ```
+```sql
+GRANT USAGE, SELECT ON SEQUENCE cities_id_seq TO user;
+```
+
 
 #### set password for all users as 'demo'
 ```sql
