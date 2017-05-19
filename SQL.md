@@ -103,6 +103,26 @@ or
 
     $ createdb -T olddb newdb
 
+```sql
+SELECT
+  pid,
+  now() - pg_stat_activity.query_start AS duration,
+  query,
+  state
+FROM pg_stat_activity
+WHERE now() - pg_stat_activity.query_start > interval '5 minutes';
+```
+
+```
+\pset expanded auto
+\pset border 1
+\pset pager on
+\pset null '(NULL)'
+```
+
+```sql
+SELECT pg_cancel_backend(__pid__);
+```
 
 # MySQL
 
